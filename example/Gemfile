@@ -2,5 +2,6 @@ source :rubygems
 
 gem 'sinatra'
 gem 'multi_json'
+gem 'yajl-ruby', :require => 'yajl'
 gem 'omniauth-intuit', :path => '../'
 #gem 'omniauth-intuit'

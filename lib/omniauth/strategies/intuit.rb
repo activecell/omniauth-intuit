@@ -19,9 +19,7 @@ module OmniAuth
           :first_name => raw_info['firstName'],
           :last_name => raw_info['lastName'],
           :name => "#{raw_info['firstName']} #{raw_info['lastName']}",
-          :urls => {
-            'public_profile' => raw_info['publicProfileUrl']
-          }
+          :email => raw_info['email']
         }
       end
 

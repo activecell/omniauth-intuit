@@ -27,7 +27,10 @@ Once these are in, you need to add the following to your `config/initializers/om
 You will obviously have to put in your key and secret, which you get when you register your app with LinkedIn (they call them API Key and Secret Key). 
 
 Now just follow the README at: https://github.com/intridea/omniauth
-     
+
+## Running example code
+
+`shotgun -s thin -d -p 3000 config.ru`     
 
 ## Note on Patches/Pull Requests
 

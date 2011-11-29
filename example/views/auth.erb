@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js"></script>
+    <script>intuit.ipp.anywhere.setup({
+      menuProxy: '<%= @blue_dot_url %>',
+      grantUrl: "<%= @intuit_connect_url %>"
+    });</script>
+  </head>
+  <body>
+    <ipp:connectToIntuit></ipp:connectToIntuit>
+    <ipp:blueDot></ipp:blueDot>
+  </body>
+</html>
