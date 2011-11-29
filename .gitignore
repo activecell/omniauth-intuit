@@ -1,3 +1,5 @@
+example/config.yml
+example/.bundle
 *.gem
 .bundle
 Gemfile.lock
