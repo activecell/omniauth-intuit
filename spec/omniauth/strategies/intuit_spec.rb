@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "OmniAuth::Strategies::Intuit" do
   subject do
-    OmniAuth::Strategies::LinkedIn.new(nil, @options || {})
+    OmniAuth::Strategies::Intuit.new(nil, @options || {})
   end
 
   it 'should add a camelization for itself' do

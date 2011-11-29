@@ -4,7 +4,7 @@ require "omniauth-intuit/version"
 
 Gem::Specification.new do |s|
   s.name        = "omniauth-intuit"
-  s.version     = Omniauth::Linkedin::VERSION
+  s.version     = Omniauth::Intuit::VERSION
   s.authors     = ["Jaigouk Kim"]
   s.email       = ["jaigouk@gmail.com"]
   s.homepage    = "https://github.com/jaigouk/omniauth-intuit"
