@@ -11,7 +11,6 @@ class App < Sinatra::Base
   get '/' do
     @blue_dot_url = ""
     @intuit_connect_url = "#{request.url}auth/intuit"
-    # redirect '/auth/intuit'
     erb :auth
   end
 

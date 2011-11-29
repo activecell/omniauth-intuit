@@ -9,7 +9,7 @@ module OmniAuth
         :site => 'https://oauth.intuit.com',
         :request_token_path => '/oauth/v1/get_request_token',
         :access_token_path => '/oauth/v1/get_access_token',
-        :authorize_url => "https://appcenter.intuit.com/Connect/Begin"
+        :authorize_url => "https://workplace.intuit.com/Connect/Begin"
       }
 
       uid{ raw_info['id'] }
@@ -28,7 +28,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= MultiJson.decode(access_token.get("https://appcenter.intuit.com/Connect").body)
+        @raw_info ||= MultiJson.decode(access_token.get("https://workplace.intuit.com/Connect").body)
       end
     end
   end
