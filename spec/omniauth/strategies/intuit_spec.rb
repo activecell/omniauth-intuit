@@ -34,30 +34,4 @@ describe "OmniAuth::Strategies::Intuit" do
     end
   end
 
-  context '#uid' do
-    before :each do
-      subject.stub(:raw_info) { { 'id' => '123' } }
-    end
-
-    it 'returns the id from raw_info' do
-      subject.uid.should eq('123')
-    end
-  end
-
-  describe '#info' do
-    before :each do
-      @raw_info ||= { 'firstName' => 'Fred', 'lastName' => 'Smith' }
-      subject.stub(:raw_info) { @raw_info }
-    end
-
-    context 'when data is present in raw info' do
-      it 'returns the first name' do
-        subject.info[:first_name].should eq('Fred')
-      end
-
-      it 'returns the last name' do
-        subject.info[:last_name].should eq('Smith')
-      end
-    end
-  end
 end

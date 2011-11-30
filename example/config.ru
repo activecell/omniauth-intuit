@@ -4,8 +4,9 @@ Bundler.require
 
 require 'sinatra/base'
 require 'omniauth-intuit'
-require 'yaml'
-require 'yajl'
+require 'crack'
+require 'rack-ssl-enforcer'
+
 
 class App < Sinatra::Base
   get '/' do
@@ -19,6 +20,13 @@ class App < Sinatra::Base
    end
 
   get '/auth/:provider/callback' do
+
+    puts "================"
+    puts params[:oauth_token]
+    puts params[:oauth_verifier]
+    puts params[:realmId]
+    puts params[:dataSource]
+    puts "================"
     content_type 'application/json'
     MultiJson.encode(request.env)
   end
@@ -30,6 +38,7 @@ class App < Sinatra::Base
 end
 
 use Rack::Session::Cookie
+# use Rack::SslEnforcer
 
 config = YAML.load(File.read('config.yml'))
 use OmniAuth::Builder do
