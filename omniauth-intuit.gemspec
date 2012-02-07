@@ -5,9 +5,9 @@ require "omniauth-intuit/version"
 Gem::Specification.new do |s|
   s.name        = "omniauth-intuit"
   s.version     = Omniauth::Intuit::VERSION
-  s.authors     = ["Jaigouk Kim"]
-  s.email       = ["jaigouk@gmail.com"]
-  s.homepage    = "https://github.com/jaigouk/omniauth-intuit"
+  s.authors     = ["Jaigouk Kim, Graham Siener"]
+  s.email       = ["jaigouk@gmail.com, graham.siener@profitably.com"]
+  s.homepage    = "https://github.com/profitably/omniauth-intuit"
   s.summary     = %q{Intuit strategy for OmniAuth.}
   s.description = %q{Intuit strategy for OmniAuth.}
 
